@@ -1,0 +1,43 @@
+.slider {
+  height: calc(100vh - 80px);
+  width: 100vw;
+  /* to have the position of the icons absolute */
+  position: relative;
+  overflow: hidden;
+}
+
+.slider .container {
+  /* // this will also decide how many images we can show per page */
+  width: 400vw;
+  height: 100%;
+  display: flex;
+  transition: all 1s ease;
+}
+
+.slider .container img {
+  width: 100vw;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slider .icons {
+  width: fit-content;
+  display: flex;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 100px;
+  gap: 10px;
+  margin: auto;
+}
+
+.slider .icons .icon {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #999;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
