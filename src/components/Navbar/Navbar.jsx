@@ -1,3 +1,5 @@
+// This is navbar component
+
 import React, {useState} from 'react';
 
 
@@ -53,8 +55,10 @@ const Navbar = () => {
                                 onClick={
                                     () => setOpen(!open)
                             }>
+                                <span>Cart</span>
                                 <ShoppingCartOutlinedIcon/>
                                 <span>0</span>
+
                             </div>
                         </li>
                     </ul>

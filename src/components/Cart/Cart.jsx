@@ -1,3 +1,5 @@
+// this is card component
+
 import React from 'react'
 import './Cart.css'
 import DeleteOutlinedIcon from '@mui/icons-material/DeleteOutlined'

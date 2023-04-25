@@ -116,3 +116,13 @@ regardless of the size of its content */
 .product .right hr {
   border: 1px solid #eeeded;
 }
+
+
+@media (max-width:600px) 
+{
+
+  .product .left{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}

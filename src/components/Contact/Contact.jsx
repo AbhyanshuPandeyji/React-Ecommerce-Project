@@ -1,3 +1,4 @@
+// page to have a contact link 
 import React from "react";
 import "./Contact.css";
 import FacebookIcon from "@mui/icons-material/Facebook";

@@ -1,3 +1,4 @@
+// category page - the page to show the different cards
 import './Categories.css'
 
 import React from 'react'
