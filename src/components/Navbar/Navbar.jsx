@@ -36,7 +36,7 @@ const Navbar = () => {
                             <Link className='link' to="/products/men">Men</Link>
                         </li>
                         <li className="nav-item m-auto">
-                            <Link className='link' to="/products/women">Woman</Link>
+                            <Link className='link' to="/products/woman">Woman</Link>
                         </li>
                         <li className="nav-item m-auto">
                             <Link className='link' to="/products/children">Children</Link>

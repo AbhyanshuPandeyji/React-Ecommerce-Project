@@ -1,1 +1,0 @@
-netlify link - https://react-ecommerce-project-abhyanshu.netlify.app/

@@ -3,10 +3,7 @@ import React from 'react'
 const Contact = () => {
     return (
         <div>
-            <img 
-                    className='catImg' 
-                    src="https://i.ibb.co/VmjCGYJ/contactus.jpg" alt="contactus" 
-                />
+            <img className='catImg' src="https://i.ibb.co/VmjCGYJ/contactus.jpg" alt="contactus"/>
             <section className="contact section-padding bg-light text-dark" id="contact">
                 <div className="container mt-5  mb-5">
                     <div className="row">
@@ -19,28 +16,20 @@ const Contact = () => {
                         </div>
                     </div>
                     <form>
-                        <div className="col-md-6">
+                        <div className="col-md-6 m-3">
                             <label htmlFor="email-id" className="form-label">Email</label>
                             <input type="email" className="form-control" id="email-id"/>
                         </div>
-                        <div className="col-md-6">
-                            <label htmlFor="Password" className="form-label">Password</label>
-                            <input type="password" className="form-control" id="Password"/>
-                        </div>
-                        <div className="col-12">
+                        <div className="col-12 m-3">
                             <label htmlFor="Address" className="form-label">Address</label>
-                            <input type="text" className="form-control" id="Address" placeholder="Your Address"/>
+                            <textarea type="text" className="form-control" id="Address" placeholder="Your Address"/>
                         </div>
-                        <div className="col-md-6">
-                            <label htmlFor="City" className="form-label">City</label>
-                            <input type="text" className="form-control" id="City"/>
+                        {/* This is giving the error */}
+                        <div className="form-floating m-3">
+                            <textarea className="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style={{height: "100px"}}></textarea>
                         </div>
-                        <div className="col-md-6">
-                            <label htmlFor="state" className="form-label">State</label>
-                            <input type="text" className="form-control" id="state"/>
-                        </div>
-                        <div className="col-12">
-                            <button type="submit" className="btn btn-primary">Sign in</button>
+                        <div className="col-12 m-3">
+                            <button type="submit" className="btn btn-primary">Submit</button>
                         </div>
                     </form>
                 </div>

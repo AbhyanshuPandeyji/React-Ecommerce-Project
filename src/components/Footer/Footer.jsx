@@ -8,26 +8,26 @@ const Footer = () => {
             {/* <!-- footer for the page  --> */}
             <footer className="section-p1">
                 <div className="cols">
-                    <Link to="/products/2">
+                    <Link to="/products/men">
                         <h4>Mens</h4>
                     </Link>
-                    <Link to="#">Shirts</Link>
-                    <Link to="#">Pants</Link>
-                    <Link to="#">Hoodies</Link>
+                    <Link to="/products">Shirts</Link>
+                    <Link to="/products">Pants</Link>
+                    <Link to="/products">Hoodies</Link>
                 </div>
 
 
                 <div className="cols">
-                    <Link to="/products/1">
+                    <Link to="/products/woman">
                         <h4>Women</h4>
                     </Link>
-                    <Link to="#">Dresses</Link>
-                    <Link to="#">Pants</Link>
-                    <Link to="#">Skirts</Link>
+                    <Link to="/products">Dresses</Link>
+                    <Link to="/products">Pants</Link>
+                    <Link to="/products">Skirts</Link>
                 </div>
 
                 <div className="cols">
-                    <Link to="/products/3">
+                    <Link to="/products/children">
                         <h4>Kids</h4>
                     </Link>
                 </div>
@@ -40,7 +40,7 @@ const Footer = () => {
                 </div>
 
                 <div className="copyright">
-                    <p>&copy; Ecommerce Company  2022-2023</p>
+                    <p>&copy; E-commerce Company  2023-2024</p>
                 </div>
             </footer>
         </div>

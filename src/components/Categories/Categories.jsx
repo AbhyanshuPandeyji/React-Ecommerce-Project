@@ -22,7 +22,7 @@ const Categories = () => {
                 <div className="rows">
                     <img src="https://i.ibb.co/z5vHJV7/ws1.webp" alt=""/>
                     <button>
-                        <Link className="link" to="/products/women">Woman</Link>
+                        <Link className="link" to="/products/woman">Woman</Link>
                     </button>
                 </div>
             </div>
