@@ -9,49 +9,49 @@ const Categories = () => {
         // main column 
         <div className='categories'>
             {/* 1st column */}
-            <div className='col'>
+            <div className='cols'>
                 {/* 1st row  */}
-                <div className="row">
-                    <img src="https://images.pexels.com/photos/1549200/pexels-photo-1549200.jpeg?auto=compress&cs=tinysrgb&w=1600" alt=""/>
+                <div className="rows">
+                    <img  src="https://i.ibb.co/ryYbvYz/sale.jpg" alt="sale"/>
                     <button>
                         <Link className="link" to="/Sale">Sale</Link>
                     </button>
                 </div>
                 {/* 2nd row */}
-                <div className="row">
-                    <img src="https://images.pexels.com/photos/1549200/pexels-photo-1549200.jpeg?auto=compress&cs=tinysrgb&w=1600" alt=""/>
+                <div className="rows">
+                    <img src="https://i.ibb.co/z5vHJV7/ws1.webp" alt=""/>
                     <button>
-                        <Link className="link" to="/products/1">Woman</Link>
+                        <Link className="link" to="/products/women">Woman</Link>
                     </button>
                 </div>
             </div>
             {/* 2nd column */}
-            <div className='col'>
+            <div className='cols'>
                 {/* 1st row  */}
-                <div className="row">
-                    <img src="https://images.pexels.com/photos/1549200/pexels-photo-1549200.jpeg?auto=compress&cs=tinysrgb&w=1600" alt=""/>
+                <div className="rows">
+                    <img src="https://i.ibb.co/K5Z4VSD/new-season.jpg" alt="new-season"/>
                     <button>
                         <Link className="link" to="/product/newseason">New Season</Link>
                     </button>
                 </div>
             </div>
             {/* 3rd column */}
-            <div className='col col-l'>
+            <div className='cols cols-l'>
                 {/* 1st row  */}
-                <div className="row">
+                <div className="rows">
                     {/* column within row within column 1st one */}
-                    <div className="col">
-                        <div className="row">
-                            <img src="https://images.pexels.com/photos/1549200/pexels-photo-1549200.jpeg?auto=compress&cs=tinysrgb&w=1600" alt=""/>
+                    <div className="cols">
+                        <div className="rows">
+                            <img src="https://i.ibb.co/ww5ygX6/mt1.jpg" alt=""/>
                             <button>
-                                <Link className="link" to="/products/2">Men</Link>
+                                <Link className="link" to="/products/men">Men</Link>
                             </button>
                         </div>
                     </div>
                     {/* column within row within column 2nd one */}
-                    <div className="col">
-                        <div className="row">
-                            <img src="https://images.pexels.com/photos/1549200/pexels-photo-1549200.jpeg?auto=compress&cs=tinysrgb&w=1600" alt=""/>
+                    <div className="cols">
+                        <div className="rows">
+                            <img src="https://i.ibb.co/vsmw88t/accessories.jpg" alt="accessories"/>
                             <button>
                                 <Link className="link" to="/product/accessories">Accessories</Link>
                             </button>
@@ -59,10 +59,10 @@ const Categories = () => {
                     </div>
                 </div>
                 {/* 2nd row  */}
-                <div className="row">
-                    <img src="https://images.pexels.com/photos/1549200/pexels-photo-1549200.jpeg?auto=compress&cs=tinysrgb&w=1600" alt=""/>
+                <div className="rows">
+                    <img src="https://i.ibb.co/J7mKPMN/gk3.jpg"/>
                     <button>
-                        <Link className="link" to="/products/3">Children's</Link>
+                        <Link className="link" to="/products/children">Children's</Link>
                     </button>
                 </div>
             </div>

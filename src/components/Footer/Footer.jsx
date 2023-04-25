@@ -1,56 +1,48 @@
 import React from 'react'
 import './Footer.css'
+import {Link} from 'react-router-dom';
 
 const Footer = () => {
     return (
-        <div className="footer">
-            <div className="top">
-                <div className="item">
-                    <h1>Categories</h1>
-                    <span>Women</span>
-                    <span>Men</span>
-                    <span>Shoes</span>
-                    <span>Accessories</span>
-                    <span>New Arrivals</span>
+        <div className='Footer-div'>
+            {/* <!-- footer for the page  --> */}
+            <footer className="section-p1">
+                <div className="cols">
+                    <Link to="/products/2">
+                        <h4>Mens</h4>
+                    </Link>
+                    <Link to="#">Shirts</Link>
+                    <Link to="#">Pants</Link>
+                    <Link to="#">Hoodies</Link>
                 </div>
-                <div className="item">
-                    <h1>Links</h1>
-                    <span>FAQ</span>
-                    <span>Pages</span>
-                    <span>Stores</span>
-                    <span>Compare</span>
-                    <span>Cookies</span>
+
+
+                <div className="cols">
+                    <Link to="/products/1">
+                        <h4>Women</h4>
+                    </Link>
+                    <Link to="#">Dresses</Link>
+                    <Link to="#">Pants</Link>
+                    <Link to="#">Skirts</Link>
                 </div>
-                <div className="item">
-                    <h1>About</h1>
-                    <span>
-                        Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do
-                                    eiusmod tempor incididunt ut labore et dolore. Lorem ipsum dolor sit
-                                    amet conse ctetur adipisicing elit, seddo eiusmod tempor incididunt
-                                    ut labore etdolore.
-                    </span>
+
+                <div className="cols">
+                    <Link to="/products/3">
+                        <h4>Kids</h4>
+                    </Link>
                 </div>
-                <div className="item">
-                    <h1>Contact</h1>
-                    <span>
-                        Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do
-                                    eiusmod tempor incididunt ut labore et dolore. Lorem ipsum dolor sit
-                                    amet conse ctetur adipisicing elit, seddo eiusmod tempor incididunt
-                                    ut labore etdolore.
-                    </span>
+
+                <div className="cols">
+                    <h4>links</h4>
+                    <Link to="/">Home</Link>
+                    <Link to="/about">About US</Link>
+                    <Link to="/contact">Contact Us</Link>
                 </div>
-            </div>
-            <div className="bottom">
-                <div className="left">
-                    <span className="logo">Lamastore</span>
-                    <span className="copyright">
-                        &copy; Copyright 2023. All Rights Reserved
-                    </span>
+
+                <div className="copyright">
+                    <p>&copy; Ecommerce Company  2022-2023</p>
                 </div>
-                <div className="right">
-                    <img src="/img/payment.png" alt=""/>
-                </div>
-            </div>
+            </footer>
         </div>
     )
 }

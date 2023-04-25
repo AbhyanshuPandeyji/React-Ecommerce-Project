@@ -1,55 +1,127 @@
-.footer {
-  margin: 100px 200px 20px 200px;
+/* Global styling for the section design */
+.section-p1 {
+    padding: 40px 80px;
 }
 
-.footer .top {
-  display: flex;
-  gap: 50px;
+/* styling the footer section */
+footer {
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: aliceblue;
+
 }
 
-.footer .top .item {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  text-align: justify;
-  font-size: 14px;
+footer .cols {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    margin: 100px;
 }
 
-.footer .top .item h1 {
-  font-size: 18px;
-  font-weight: 500;
-  color: #555;
+footer .footer-logo {
+    margin-bottom: 30px;
 }
 
-.footer .top .item span {
-  color: gray;
+footer h4 {
+    font-size: 30px;
+    padding: 20px;
 }
 
-.footer .bottom {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-top: 50px;
+footer p {
+    font-size: 30px;
+    padding: 0 0 8px 0;
 }
 
-.footer .bottom .left {
-  display: flex;
-  align-items: center;
+footer a {
+    font-size: 20px;
+    text-decoration: none;
+    color: #222;
+    margin-bottom: 10px;
 }
 
-.footer .bottom .left .logo {
-  color: #2879fe;
-  font-weight: bold;
-  font-size: 24px;
+footer .follow {
+    margin-top: 20px;
 }
 
-.footer .bottom .left .copyright {
-  margin-left: 20px;
-  font-size: 12px;
-  color: gray;
+footer .follow i {
+    color: #088178;
+    padding-right: 4px;
+    cursor: pointer;
 }
 
-.footer .bottom .right img {
-  height: 50px;
+footer .follow i:hover,
+footer a:hover {
+    color: forestgreen;
+}
+
+footer .copyright {
+    width: 100%;
+    text-align: center;
+}
+
+@media (max-width: 830px) {
+    .section-p1 {
+        padding: 40px 40px;
+    }
+    footer a {
+        font-size: 13px;
+    }
+
+    footer p,
+    footer h4 {
+        font-size: 20px;
+    }
+
+    footer .cols {
+        margin: 20px;
+    }
+}
+
+
+@media (max-width: 470px){
+
+    .section-p1 {
+        padding: 20px;
+    }
+    
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+    }
+
+    footer .copyright {
+        text-align: center;
+    }
+
+    footer col a {
+        margin: 0;
+    }
+
+    footer col h4,
+    footer col p {
+        margin: 0;
+    }
+
+    footer a {
+        font-size: 13px;
+    }
+
+    footer p,
+    footer h4 {
+        font-size: 20px;
+    }
+
+    footer .cols {
+        margin: 0;
+    }
+
+
 }

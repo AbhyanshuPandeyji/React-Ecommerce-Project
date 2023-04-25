@@ -1,0 +1,305 @@
+
+/* ! customizing the background of list-group */
+*{
+    overflow: hidden;
+}
+
+.list-group{
+    --bs-list-group-bg:lightgoldenrodyellow;
+    --bs-list-group-color: rgba(170, 92, 52, 0.916);
+}
+
+.card .list-group-item{
+    border-bottom: 0;
+}
+
+.card-img, .card-img-top {
+
+    height: 14rem;
+
+}
+
+
+
+/* ! featured section */
+
+section.featured{
+    /* background-color:rgba(0,0,0,0.8); */
+    color:lightgoldenrodyellow;
+}
+
+/* ! carousel item */
+
+.carousel-item{
+    position: relative;
+}
+
+/* ! when the screen is large */
+
+.container.four-item-slide{
+    position: absolute;
+    height: 40rem;
+    top:2rem;
+    left:5%;
+    right:5%;
+}
+
+/* ! when the screen is medium */
+
+.container.two-item-slide{
+    position: absolute;
+    top:1rem;
+    left:3rem;
+    right:3rem;
+
+}
+
+
+
+.container.two-item-slide .card{
+    height:29rem;
+}
+
+
+.container.four-item-slide .card .card-body{
+    background-color: lightgoldenrodyellow !important;
+    color:rgba(170, 92, 52, 0.916);
+}
+
+/* ! when the screen is small */
+.container.one-item-slide{
+    position: absolute;
+    top:3rem;
+    left: 0rem;
+    right: 0rem;
+}
+
+/* ! carousel */
+.carousel{
+   background-color: rgb(250, 253, 255);;
+}
+
+
+/* ! carousel previous button */
+
+
+
+.carousel-control-prev-icon{
+    position: absolute;
+    left:0rem;
+    overflow-x: hidden;
+    /* background-color: black; */
+    color:white;
+    width:3rem;
+    height:3rem;
+}
+.carousel-control-next-icon{
+    position: absolute;
+    right:1rem;
+    /* background-color: black; */
+    color:white;
+    overflow-x: hidden;
+    width:3rem;
+    height:3rem;
+}
+
+/* ! carousel item card with box-shadow */
+
+.carousel .carousel-item .card {
+    background-color: lightgoldenrodyellow;
+    color:rgba(170, 92, 52, 0.916);
+    /* box-shadow: 2px 3px 14px 5px black; */
+}
+
+
+
+/* ! carousel item card body */
+.card {
+    height: 40rem;
+}
+
+.carousel .carousel-item .card .card-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+
+/* ! featured section title*/
+
+.featured h4{
+    font-size: 4rem;
+    text-transform: capitalize;
+    /* font-variant:small-caps; */
+    font-family: 'Clash Display';
+    /* text-shadow: 2px 10px 3px rgba(20, 20, 20, 0.916); */
+    letter-spacing: 5px;
+    padding:1rem 0;
+}
+
+/* ! single product image */
+
+.carousel-item .card img{
+    /* object-position: 0rem -8rem; */
+    object-fit:contain;
+    background: lightgoldenrodyellow;
+}
+
+.card > img {
+    height: 400px;
+}
+
+.carousel-item .card .card-title{
+    font-family: 'Striper';
+}
+.carousel-item .card .card-text{
+    font-family: 'Clash Display';
+    font-size: 0.8rem;
+    /* text-shadow: 2px 4px 9px rgba(0,0,0,0.5); */
+    font-weight: 500;
+   
+}
+
+
+
+
+
+
+
+
+/* ! card btn primary */
+
+.card .btn-primary{
+    background-color:rgba(170, 92, 52, 0.916);
+    color:lightgoldenrodyellow;
+    font-variant: small-caps;
+   
+    border:3px double lightgoldenrodyellow;
+}
+
+
+
+@media(max-width:768px){
+    /*  */
+    .carousel-item .card img{
+        height:16rem;
+        
+        /* ! displays a certain portion of the picture. 0rem -12rem hides the face and shows from the neck */
+        /* object-position: 0rem -14rem; */
+        object-fit:contain;
+        
+        
+    }
+    .carousel-item .card{
+        width:80% !important;
+        margin:0 auto;
+    }
+
+    .featured h4{
+        font-size: 3rem;
+        padding:0;
+    }
+
+    
+    .carousel-item .card .card-body{
+        background-color: lightgoldenrodyellow;
+        color:black;
+    }
+    .carousel-item .card .card-text{
+        font-size: 1rem;
+        max-width: 80%;
+
+    }
+
+    footer .card ul {
+        min-height: 0rem;
+        background: lightgoldenrodyellow;
+    }
+
+    .carousel-control-prev-icon{
+        overflow-x: hidden;
+        /* background-color: black; */
+    }
+    .carousel-control-next-icon{
+        position: relative;
+        overflow-x: hidden;
+    }
+    
+
+}
+
+@media(min-width:768px){
+
+    
+    .featured .card{
+        min-height: 34rem;
+        max-height: 34rem;
+    }
+
+    .featured .card .card-body{
+        flex-direction: column;
+        justify-content: space-around;
+        color:black !important;
+        
+    }
+
+  
+    .featured .card .card-text{
+        font-size: 1rem !important;
+    }
+
+    .card .list-group-item{
+        font-size: 1.3rem;
+    }
+
+
+   
+
+}
+
+
+
+@media(min-width:992px){
+
+    .card .list-group-item{
+        font-size: 1.3rem;
+    }
+
+    /* ! dropdown menu styles on large devices */
+
+    .dropdown-menu{
+        font-size: 1.4rem;
+        text-align: center;
+    }
+    /* ! search input on large screen */
+
+    .card .btn-primary{
+        font-size: 1rem;
+        width: 80% !important;
+    }
+
+    
+    .card .card-title{
+        font-size: 1rem;
+        color:black;
+    }
+
+    .card .card-text{
+        font-size: 0.8rem !important;
+    }
+   
+
+}
+
+
+/* ! generalizing the hover styles forcefully */
+
+.btn-primary:hover{
+    color:white !important;
+    background-color: orange !important;
+}
+
+#smallScreenSlider{
+    overflow-x: hidden;
+}

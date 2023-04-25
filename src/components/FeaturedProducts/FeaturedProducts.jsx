@@ -6,35 +6,31 @@ import "./FeaturedProducts.css";
 const data = [
   {
     id: 1,
-    img: "https://images.pexels.com/photos/1549200/pexels-photo-1549200.jpeg?auto=compress&cs=tinysrgb&w=1600",
-    img2: "https://images.pexels.com/photos/949670/pexels-photo-949670.jpeg?auto=compress&cs=tinysrgb&w=1600",
-    title: "Long Sleeve Graphic T-shirt",
+    img: "https://i.ibb.co/vkqWxvB/mh1.jpg",
+    title: "Hoodie",
     isNew: true,
     oldPrice: 19,
     price: 12,
   },
   {
     id: 2,
-    img: "https://images.pexels.com/photos/1549200/pexels-photo-1549200.jpeg?auto=compress&cs=tinysrgb&w=1600",
-    img2: "https://images.pexels.com/photos/949670/pexels-photo-949670.jpeg?auto=compress&cs=tinysrgb&w=1600",
-    title: "Coat",
+    img: "https://i.ibb.co/fCBRFhg/wd1.jpg",
+    title: "Dresses",
     isNew: true,
     oldPrice: 19,
     price: 12,
   },
   {
     id: 3,
-    img: "https://images.pexels.com/photos/1549200/pexels-photo-1549200.jpeg?auto=compress&cs=tinysrgb&w=1600",
-    img2: "https://images.pexels.com/photos/949670/pexels-photo-949670.jpeg?auto=compress&cs=tinysrgb&w=1600",
+    img: "https://i.ibb.co/0Gdpj2k/bk7.jpg",
     title: "Jeans",
     oldPrice: 19,
     price: 12,
   },
   {
     id: 4,
-    img: "https://images.pexels.com/photos/1549200/pexels-photo-1549200.jpeg?auto=compress&cs=tinysrgb&w=1600",
-    img2: "https://images.pexels.com/photos/949670/pexels-photo-949670.jpeg?auto=compress&cs=tinysrgb&w=1600",
-    title: "Skirts",
+    img: "https://i.ibb.co/vjkJzkj/wd8.jpg",
+    title: "Sarees",
     oldPrice: 19,
     price: 12,
   },
@@ -53,11 +49,7 @@ const FeaturedProducts = ({ type }) => {
       <div className="top">
         <h1>{type} products</h1>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum
-          suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan
-          lacus vel facilisis labore et dolore magna aliqua. Quis ipsum
-          suspendisse ultrices gravida. Risus commodo viverra maecenas.
+          Lorem ipsum dolor sit amet
         </p>
       </div>
       

@@ -64,8 +64,7 @@ const Products = () => {
             <div className="right">
                 <img 
                     className='catImg' 
-                    src="https://images.pexels.com/photos/1549200/pexels-photo-1549200.jpeg?auto=compress&cs=tinysrgb&w=1600" 
-                    alt="category selected images"
+                    src="https://i.ibb.co/92mHS7h/shopping.jpg" alt="main-bg" 
                 />
                 {/* this is for list of components - or the content different product according our filters */}
                 {/* passing filters to show data according to the category id */}

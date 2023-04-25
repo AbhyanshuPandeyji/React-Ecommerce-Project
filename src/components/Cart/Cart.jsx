@@ -80,7 +80,10 @@ const Cart = () => {
         </div>
             <button className='reset'>PROCEED TO CHECKOUT</button>
             <span className='reset'>Reset Cart</span>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <span className='btn btn-danger'>close cart</span>
         </div>
+
     )
 }
 

@@ -1,4 +1,4 @@
-import React , {useState} from 'react';
+import React, {useState} from 'react';
 
 
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
@@ -9,9 +9,7 @@ import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 import {Link} from 'react-router-dom';
 import Cart from "../Cart/Cart.jsx"
 
-import './Navbar.css'
-
-
+// import './Navbar.css'
 
 
 const Navbar = () => {
@@ -20,59 +18,56 @@ const Navbar = () => {
     const [open, setOpen] = useState(false);
 
     return (
-        <div className='navbar'>
-            <div className='wrapper'>
-                <div className='left'>
-                    <div className='item'>
-                        <img src="/images/indiapng.png" alt="country logo"/>
-                        <KeyboardArrowDownIcon/>
-                    </div>
-                    <div className='item'>
-                        <span>India</span>
-                    </div>
-                    <div className='item'>
-                        <Link className='link' to="/products/2">Men</Link>
-                    </div>
-                    <div className='item'>
-                        <Link className='link' to="/products/1">Woman</Link>
-                    </div>
-                    <div className='item'>
-                        <Link className='link' to="/products/3">Children</Link>
-                    </div>
-                    <div className='item'>
-                        <Link className='link' to="/products/4">Accessories</Link>
-                    </div>
-                </div>
-                <div className='center'>
-                    <Link className='link' to="/">E-commerce Site</Link>
-                </div>
-                <div className='right'>
-                    <div className='item'>
-                        <Link className='link' to="/products/4">Homepage</Link>
-                    </div>
-                    <div className='item'>
-                        <Link className='link' to="/products/4">About</Link>
-                    </div>
-                    <div className='item'>
-                        <Link className='link' to="/products/4">Contact</Link>
-                    </div>
-                    <div className='item'>
-                        <Link className='link' to="/products/4">Stores</Link>
-                    </div>
-                    <div className='icons'>
-                        <SearchIcon/>
-                        <PersonOutlineOutlinedIcon/>
-                        <FavoriteBorderOutlinedIcon/>
-                        <div className='cartIcon' onClick={()=>setOpen(!open)} >
-                            <ShoppingCartOutlinedIcon/>
-                            <span>0</span>
-                        </div>
-                    </div>
-                </div>
 
+        <nav className="navbar navbar-expand-lg bg-body-tertiary">
+            <div className="container-fluid">
+                <Link className='navbar-brand link' to="/">E-commerce Site</Link>
+                <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span className="navbar-toggler-icon"></span>
+                </button>
+                <div className="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul className="navbar-nav me-auto mb-2 mb-lg-0 container-fluid">
+                        <li className="nav-item m-auto">
+                            <Link className='nav-link link' to="/">Homepage</Link>
+                        </li>
+                        <li className="nav-item m-auto">
+                            <Link className='link' to="/products/men">Men</Link>
+                        </li>
+                        <li className="nav-item m-auto">
+                            <Link className='link' to="/products/women">Woman</Link>
+                        </li>
+                        <li className="nav-item m-auto">
+                            <Link className='link' to="/products/children">Children</Link>
+                        </li>
+                        <li className="nav-item m-auto">
+                            <Link className='link' to="/products/accessories">Accessories</Link>
+                        </li>
+                        <li className="nav-item m-auto">
+                            <Link className='link' to="/about">About</Link>
+                        </li>
+                        <li className="nav-item m-auto">
+                            <Link className='link' to="/contact">Contact</Link>
+                        </li>
+                        <li className="nav-item m-auto">
+                            <div className='cartIcon'
+                                onClick={
+                                    () => setOpen(!open)
+                            }>
+                                <ShoppingCartOutlinedIcon/>
+                                <span>0</span>
+                            </div>
+                        </li>
+                    </ul>
+                    <form className="d-flex" role="search">
+                        <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+                        <button className="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
             </div>
-            {open && <Cart/>}
-        </div>
+            {
+            open && <Cart/>
+        } </nav>
+
     )
 }
 

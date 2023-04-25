@@ -10,9 +10,9 @@ const Slider = () => {
 
     const data = [
         // change these images later
+        "https://i.ibb.co/9tbfqpc/banner-palin.jpg",
         "https://images.pexels.com/photos/1549200/pexels-photo-1549200.jpeg?auto=compress&cs=tinysrgb&w=1600",
         "https://images.pexels.com/photos/949670/pexels-photo-949670.jpeg?auto=compress&cs=tinysrgb&w=1600",
-        "https://images.pexels.com/photos/837140/pexels-photo-837140.jpeg?auto=compress&cs=tinysrgb&w=1600",
         "https://images.pexels.com/photos/837140/pexels-photo-837140.jpeg?auto=compress&cs=tinysrgb&w=1600",
     ];
 
@@ -32,8 +32,8 @@ const Slider = () => {
 
     return (
         // Our Slider
-        <div className="slider">
-        <div className="container" style={{transform:`translateX(-${currentSlide * 100}vw)`}}>
+        <div className="sliders">
+        <div className="containers" style={{transform:`translateX(-${currentSlide * 100}vw)`}}>
             {/* Different Images  */}
             {/* // this will not work this needs an component to decide its size */}
             {/* {data.for((data)=>(

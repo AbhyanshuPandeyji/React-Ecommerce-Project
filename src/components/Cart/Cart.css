@@ -2,7 +2,7 @@
   /* this is to define the cart modal */
   position: absolute;
   right: 20px;
-  top: 80px;
+  top: 40vmax;
   /* to have the cart modal above every elements of the page */
   z-index: 999;
   background-color: white;

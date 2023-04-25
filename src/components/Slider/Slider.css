@@ -1,4 +1,4 @@
-.slider {
+.sliders {
   height: calc(100vh - 80px);
   width: 100vw;
   /* to have the position of the icons absolute */
@@ -6,7 +6,7 @@
   overflow: hidden;
 }
 
-.slider .container {
+.sliders .containers {
   /* // this will also decide how many images we can show per page */
   width: 400vw;
   height: 100%;
@@ -14,13 +14,13 @@
   transition: all 1s ease;
 }
 
-.slider .container img {
+.sliders .containers img {
   width: 100vw;
   height: 100%;
   object-fit: cover;
 }
 
-.slider .icons {
+.sliders .icons {
   width: fit-content;
   display: flex;
   position: absolute;
@@ -31,7 +31,7 @@
   margin: auto;
 }
 
-.slider .icons .icon {
+.sliders .icons .icon {
   width: 50px;
   height: 50px;
   border: 1px solid #999;

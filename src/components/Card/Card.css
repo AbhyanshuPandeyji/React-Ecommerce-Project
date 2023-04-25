@@ -1,7 +1,7 @@
 .card {
-  width: 280px;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
   gap: 10px;
   margin-bottom: 50px;
 }
@@ -11,20 +11,17 @@
   height: 400px;
   overflow: hidden;
   /* the parent should be absolute to use the absolute in the children */
-  position: relative;
+  /* position: relative; */
 }
 
   /* to show the second image on hover */
-.card .image:hover .secondImg {
-  z-index: 2;
-}
 
 
 .card .image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  position: absolute;
+  /* position: absolute; */
 }
 
 /* z-index will decide which image we will see on hover */
@@ -44,23 +41,31 @@
   font-size: 12px;
 }
 
-.card h2 {
+.card-body .card-title,
+.card-body .card-text h5,
+.card-body .card-text .btn {
   font-size: 16px;
   font-weight: 400;
+  align-items: center;
+  justify-content: center;
 }
 
 .card .prices {
   display: flex;
+  align-items: center;
+  justify-content: center;
   gap: 20px;
 }
 
-.card .prices h3 {
+.card .prices h5 {
   font-size: 18px;
   font-weight: 500;
+  align-items: center;
+  justify-content: center;
 }
 
 /* // to add line on the old price */
-.card .prices h3:first-child {
+.card .prices h5:first-child {
   color: gray;
   text-decoration: line-through;
 }

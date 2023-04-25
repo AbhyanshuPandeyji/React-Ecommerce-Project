@@ -1,0 +1,20 @@
+@media (max-width:600px){
+ .homepage{
+    overflow-x: hidden !important
+    ;
+}
+}
+/*
+.homepage .grid{
+    display: flex;
+    flex-direction: column;
+} */
+
+/* .homepage .slider{
+    display: flex;
+    flex-direction: row;
+}
+.homepage .featuredProducts{
+    display: flex;
+    flex-direction: row;
+} */

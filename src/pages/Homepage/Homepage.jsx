@@ -3,12 +3,14 @@ import Slider from '../../components/Slider/Slider.jsx';
 import FeaturedProducts from '../../components/FeaturedProducts/FeaturedProducts.jsx';
 import Categories from '../../components/Categories/Categories.jsx';
 import Contact from '../../components/Contact/Contact.jsx';
-import './Home.css'
+import Sliding from '../../components/Sliding/Sliding.jsx';
+import './Homepage.css'
 
-const Home = () => {
+const Homepage = () => {
     return (
         <div>
             <Slider/>
+            <Sliding/>
             <FeaturedProducts type="featured"/>
             <Categories/>
             <FeaturedProducts type="trending"/>
@@ -17,4 +19,4 @@ const Home = () => {
     )
 }
 
-export default Home;
+export default Homepage;
